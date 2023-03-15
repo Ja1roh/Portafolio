@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    min-height: 100%;
+    background-color: rgb(245, 224, 200);
+}
+html{height: 100%;}
+
+.grid-container>*{
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+
+.nave{
+    grid-area: nave;
+    background-color: rgb(174, 179, 247);
+    width:auto;
+    height: 25px;
+    word-spacing: 50px;
+    text-align: center;
+    padding: 25px;
+    margin: 10px;
+}
