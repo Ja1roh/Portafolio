@@ -1,28 +1,75 @@
+/*Globales*/
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Chivo Mono', monospace;
+}
+html{
+    height: 100%;
 }
 body{
     min-height: 100%;
-    background-color: rgb(245, 224, 200);
+    background-image: linear-gradient(
+        to bottom,
+        #98c7b0,
+        #ffb870
+    );
 }
-html{height: 100%;}
+a {
+    text-decoration: none;
+    color: white;
+}
 
-.grid-container>*{
+
+/*<-------NAVBAR------>*/
+.navbar{
+    grid-area: navbar;
+    background-color: #98c7b0;
+    width:100%;
+    height: 110px;
+}
+.letrasNav{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.letrasNav:hover{
+    background-color: #ffb870;
+    transition: .8s;
+    border-radius: 55px;
+}
+#gitHub {
+    width: 45px;
+}
+#gitHub:hover {
+    width: 50px;
+    transition: .2s;
+}
+#lnkIn {
+    width: 45px;
+    
+}
+#lnkIn:hover {
+    width: 50px;
+    transition: .2s;
+}
+.enlaces-container {
+    font-size: 25px;
+    
+}
+
+
+/*<-------/NAVBAR/------>*/
+
+/*<-------BODY------>*/
+.title1{
+    font-size: 37px;
     text-align: center;
-    border-radius: 5px;
-    padding: 10px;
-
+    background-size: 100%;
+    border-radius: 55px;
+    background-color: #f0f0d8;
+    color: #98c7b0;
 }
+/*<-------/BODY/------>*/
 
-.nave{
-    grid-area: nave;
-    background-color: rgb(174, 179, 247);
-    width:auto;
-    height: 25px;
-    word-spacing: 50px;
-    text-align: center;
-    padding: 25px;
-    margin: 10px;
-}
+/* #98c7b0  ----> color para otra cosa */ 
