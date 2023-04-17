@@ -1,4 +1,3 @@
-/*Globales*/
 *{
     box-sizing: border-box;
     padding: 0;
@@ -67,20 +66,7 @@ a {
     grid-area: enlaces-container;
     
 }
-
-
-/*<-------/NAVBAR/------>*/
-
-/*<-------BODY------>*/
-.title1{
-    grid-area: title1;
-    font-size: 30px;
-    text-align: center;
-    border-radius: 55px;
-    background-color: #f0f0d8;
-    color: #98c7b0;
-    object-fit: contain;
-}
+/*------GRID------*/  
 @media(min-width:900px) {
     .navbar {
         display: grid;
@@ -91,17 +77,4 @@ a {
             gap:0px;
             height: 100%;
     }
-  
-    .grid-container {
-        display: grid;
-        grid-template-rows: 15% 15% 70%;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            'navbar'
-            'title1'
-            '.';
-    }
 }
-/*<-------/BODY/------>*/
-
-/* #98c7b0  ----> color para otra cosa */ 
