@@ -23,15 +23,24 @@ a {
 
 
 /*<-------NAVBAR------>*/
+
 .navbar{
     grid-area: navbar;
     background-color: #98c7b0;
     width:100%;
     height: 110px;
 }
+.social-container{
+    padding: 40px;
+    grid-area: social-container;
+}
+
 .letrasNav{
+    object-fit: contain;
+    display:inline;
     padding-left: 10px;
     padding-right: 10px;
+    grid-area: letrasNav;
 }
 .letrasNav:hover{
     background-color: #ffb870;
@@ -54,7 +63,11 @@ a {
     transition: .2s;
 }
 .enlaces-container {
+    object-fit: contain;
+    text-align: center;
+    padding: 40px;
     font-size: 25px;
+    grid-area: enlaces-container;
     
 }
 
@@ -63,12 +76,34 @@ a {
 
 /*<-------BODY------>*/
 .title1{
-    font-size: 37px;
+    grid-area: title1;
+    font-size: 30px;
     text-align: center;
-    background-size: 100%;
     border-radius: 55px;
     background-color: #f0f0d8;
     color: #98c7b0;
+    object-fit: contain;
+}
+@media(min-width:900px) {
+    .navbar {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 30% 50% 20%;
+        grid-template-areas: 
+            'enlaces-container . social-container';
+            gap:0px;
+            height: 100%;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-rows: 15% 15% 70%;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            'navbar'
+            'title1'
+            '.';
+}
+
 }
 /*<-------/BODY/------>*/
 
